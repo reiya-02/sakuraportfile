@@ -1,0 +1,92 @@
+body {
+  background: hsl(288, 24%, 96%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.header,
+.container input {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  display: inline;
+	font-size: 26px;
+	background-image: linear-gradient(rgba(0,0,0,0) 70%, rgb(252,81,133) 70%);}
+
+
+/* Every row inside .login-container is defined with p tags */
+.container input {
+  padding: 12px;
+}
+
+.container input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+span {
+  color: hsl(0, 64%, 50%);
+}
+
+button {
+  background-color: #f19db5;
+  margin: 10px;
+  margin-left: 0;
+  padding: 10px;
+  padding-left: 5px;
+  width: 100%;
+  border: 1px solid hwb(345 47% 4%);
+
+}
+
+button a {
+  font-size: 18px;
+  color: #ffff;
+}
+
+.ken {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+textarea {
+  padding: 8px 10px;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  background: hsl(0, 12%, 97%);
+  color: rgb(12, 11, 12);
+  font-size: 1em;
+  line-height: 1.5;
+  resize: none;  /* リサイズを無効にする */
+}
+
+.question {
+  width: 100%;
+  height: 40px;
+}
+
+.bel, .st{
+  margin-bottom: 20px;
+}

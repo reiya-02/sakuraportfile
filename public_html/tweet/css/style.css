@@ -1,0 +1,420 @@
+
+body {
+    background-image: url('../img/back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    color: #454545;
+    text-shadow: 2px 1px #c7edff, 4px 2px #9acee7, 6px 3px #6bbade;
+    text-align: center;
+    font-size: 4.5em;
+}
+
+.talk {
+
+    display: flex;
+ 
+    gap: 30px;
+ 
+    padding: 100px 0;
+ 
+    max-width: 1000px;
+ 
+    margin: 0 auto;
+ 
+ }
+.talk1 {
+    display: flex;
+    gap: 95px;
+} 
+.talk2 {
+    display: flex;
+    gap: 100px;
+}
+.talkList1 {
+    display: flex;
+    gap: 90px;
+}
+.talkList2 {
+    display: flex;
+    gap: 100px;
+}
+ .sakuratalk {
+ 
+    width: 33.333%;
+ 
+ }
+ 
+ .sakura-item {
+ 
+    width: 150%;
+ 
+    height: 300px;
+ 
+    object-fit: cover; /* width, heightといっしょに使います */
+ 
+    border: 0px solid #111;
+ }
+
+
+.sakuratalk p {
+    font-size: 25px;
+}
+
+.selectbox-1 {
+    position: relative;
+}
+
+.selectbox-1::before,
+.selectbox-1::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-1::before {
+    display: inline-block;
+    right: 0;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 0 25px 25px 0;
+}
+
+.selectbox-1::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.selectbox-1 select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em 3.6em .4em .8em;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffc2ec;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.selectbox-1 select:focus {
+    outline: 2px solid #e397f2;
+}
+
+.selectbox {
+    position: relative;
+}
+
+.selectbox::before,
+.selectbox::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox::before {
+    display: inline-block;
+    right: 0;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 0 25px 25px 0;
+}
+
+.selectbox::after {
+    top: 10%;
+    right: 84%;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.selectbox select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em 3.6em .4em .8em;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffc2ec;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.selectbox select:focus {
+    outline: 2px solid #e397f2;
+}
+
+
+.tweet-text {
+    width: 50%;
+    padding: 8px 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    background: #0c0c0c;
+    color: hwb(300 97% 2%);
+    font-size: 2em;
+    line-height: 1.5;
+    resize: none;  /* リサイズを無効にする */
+    /* vertical-align:top; */
+}
+
+
+.button {
+    display       : block;
+    margin: auto;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 18pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 35px;   /* 余白       */
+    background    : #ff99ff;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #ff99ff;    /* 枠の指定 */
+  }
+  .button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #ff99ff;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+  }
+  .buttonList {
+    display       : block;
+    margin: auto;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 18pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 35px;   /* 余白       */
+    background    : #ff99ff;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #ff99ff;    /* 枠の指定 */
+  }
+  .buttonList:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #ff99ff;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+  }
+
+table {
+    border-collapse: collapse;  /* セルの線を重ねる */
+}
+
+
+th,td {
+    padding: 5px 10px;          /* 余白指定 */
+}
+
+th {
+    background-color: #2196F3;  /* 背景色指定 */
+    color:  #fff;               /* 文字色指定 */
+    font-weight:  normal;       /* 文字の太さ指定 */
+    position:  relative;        /* 位置指定 */
+    z-index: 10;                /* 重なり調整 */
+    width: 60%;
+    height: 30%;
+}
+
+td {
+    background-color:  #c0c9ff; /* 背景色指定 */
+    padding-left: 40px;         /* 余白指定 */
+    width: 150%;
+    height: 10%;
+    
+}
+
+th::after {
+    content:'';                 /* 空の要素を作る */
+    position:  absolute;        /* 位置指定 */
+    height: 24px;               /* 高さ指定 */
+    width: 24px;                /* 幅指定 */
+    background-color: #2196F3;  /* 背景色指定 */
+    transform:  rotate(45deg);  /* 要素を回転 */
+    top: 5px;                   /* 位置指定 */
+    right: -12px;               /* 位置指定 */
+    z-index:  -1;               /* 重なり調整 */
+}
+
+tr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+    padding: 10px;
+}
+
+.like_button {
+    color: #888;
+    font-size: 1em;
+    background-color: transparent;
+    border: 0.1em solid;
+    border-radius: 1em;
+    padding: 0.333em 1em 0.25em;
+    line-height: 1.2em;
+    box-shadow: 0 0.25em 1em -0.25em;
+    cursor: pointer;
+    transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out;
+    outline: 0;
+    }
+    .like_button__icon {
+    display: inline-block;
+    fill: currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 0.2em;
+    }
+    .like_button:hover {
+    color: #e5348c;
+    }
+    .like_button.liked {
+    color: #ffffff;
+    background-color: #e5348c;
+    border-color: #e5348c;
+}
+
+.btn-red {
+    background-color: hsl(354, 86%, 54%);
+}
+@media screen and (max-width: 400px) {
+    .text2 {
+        font-size: 1.5em;
+    }
+    .text {
+        font-size: 3em;
+    }
+    .talk {
+        display: block;
+    }
+    .talk1 {
+        gap: 80px;    
+    }
+    .talk2 {
+        gap: 90px;    
+    }
+    .talkList1 {
+        gap: 80px;    
+    }
+    .talkList2 {
+        gap: 80px;    
+    }
+    .sakura-item {
+        width: 150px;
+        height: 200px;
+    }
+    .label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .tweet-text {
+        width: 95%;
+        height: 500px;
+        margin-top: 50px;
+    }
+    .selectbox-1::before {
+        position: relative;
+    }
+    .selectbox-1 select {
+        margin-top: 50px;
+        min-width: 300px;
+    }
+
+    .selectbox::before {
+        position: relative;
+    }
+    .selectbox select {
+        margin-top: 50px;
+        min-width: 300px;
+    }
+    .selectbox::after {
+        top: 7%;
+        right: 3em;
+    }
+    .buttonList {
+        margin-top: 50px;
+    }
+    td {
+        padding-left: 25px;
+        width: 95%;
+    }
+}
+    
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text2 {
+        font-size: 1.5em;
+    }
+    .text {
+        font-size: 3em;
+    }
+    .talk1 {
+        gap: 80px;    
+    }
+    .talk2 {
+        gap: 90px;    
+    }
+    .talkList1 {
+        gap: 80px;    
+    }
+    .talkList2 {
+        gap: 80px;    
+    }
+    .sakura-item {
+        width: 150px;
+        height: 200px;
+    }
+    .label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .tweet-text {
+        width: 95%;
+        height: 500px;
+        margin-top: 50px;
+    }
+    .selectbox-1::before {
+        position: relative;
+    }
+    .selectbox-1 select {
+        margin-top: 50px;
+        min-width: 500px;
+    }
+
+    .selectbox::before {
+        position: relative;
+    }
+    .selectbox select {
+        margin-top: 50px;
+        min-width: 300px;
+    }
+    .selectbox::after {
+        top: 7%;
+        right: 3em;
+    }
+    .buttonList {
+        margin-top: 50px;
+    }
+    td {
+        padding-left: 25px;
+        width: 95%;
+    }
+
+}

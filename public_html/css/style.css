@@ -1,0 +1,652 @@
+.top-hero {
+    background:url(../img/img10.jpg) no-repeat 0 10px;
+    background-size: 150% ;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fbf8fa;
+    /* padding: 10px;
+    margin: 15px; */
+    color: hwb(0 2% 9%);
+}
+
+
+.description img {
+    float: center;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    font-size: 20px;
+    color: hwb(0 3% 96%);
+}
+
+
+
+section {
+    padding: 10px;
+    background-color: hsl(0, 0%, 96%);
+    text-align: center;
+}
+
+
+.menu {
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 99;
+}
+.menu__line {
+    background: hsl(0, 4%, 5%);
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: transform .3s;
+    width: 100%;
+}
+.menu__line--center {
+    top: 9px;
+}
+.menu__line--bottom {
+    bottom: 0;
+}
+.menu__line--top.active {
+    top: 8px;
+    transform: rotate(45deg);
+}
+.menu__line--center.active {
+    transform:scalex(0);
+}
+.menu__line--bottom.active {
+    bottom: 10px;
+    transform: rotate(135deg);
+}
+
+.gnav {
+    background: hwb(300 99% 0%);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+    font-size: 25px;
+}
+/* .gnav__wrap {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    
+} */
+/* .gnav__menu__item {
+    margin: 40px 0;
+}
+.ganv__menu__item a {
+    color: #f00707;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    text-decoration: none;
+    transition: .5s;
+}
+.gnav__menu__item a:hover {
+    color: #ea1212;
+} */
+.gnav__menu a {
+    text-decoration: none;
+    color: hwb(0 4% 92%);
+}
+.gnav__menu {
+    padding: 0;
+    position: relative;
+}
+.gnav__menu {
+    color: #2d8fdd;
+    border-left: solid 6px #2d8fdd;/*左側の線*/
+    background: #f1f8ff;/*背景色*/
+    margin-bottom: 3px;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+}
+.slide-items {
+    width: 100%;
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+}
+
+.slide-items li {
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.slide-items img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: hwb(0 5% 93%);
+}
+
+
+.pc-nav {
+    list-style: none;
+    overflow: hidden;
+    font-family: "Courier New";
+    font-size: 20px;
+}
+
+.pc-nav li {
+    width: 140px;
+    text-align: center;
+    background-color: hwb(0 100% 0%);
+    float: left;
+}
+
+.pc-nav li a {
+    text-decoration: none;
+    color: hsl(0, 10%, 6%);
+    font-weight: bold;
+}
+
+header.container img {
+    position: absolute;
+}
+
+
+header {
+    color: #faf8f8;
+}
+
+.elem-visual {
+    padding: 10px;
+    margin: 20px;
+}
+
+.elem-visual img {
+    height: 80%;
+    vertical-align: bottom;
+}
+
+.cp_timeline04 {
+	position: relative;
+	margin: 3em auto;
+	padding-bottom: 2em;
+}
+.cp_timeline04 .timeline_item {
+	margin: 0px 0px 0px 80px;
+}
+.cp_timeline04 .timeline_item .time_date .time {
+	font-family: serif;
+	font-size: 6em;
+	font-weight: bold;
+	position: relative;
+	margin: 0;
+	letter-spacing: 3px;
+	color: rgba(233,30,99,0.1);
+}
+.cp_timeline04 .timeline_item .time_date .flag {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0;
+	margin-top: -60px;
+	color: #880e4f;
+}
+.cp_timeline04 .timeline_item .desc {
+	font-size: 0.8em;
+	line-height: 20px;
+	margin-top: 10px;
+	padding-left: 20px;
+	border-left: 1px solid #880e4f;
+}
+
+h1 {
+    color: hsl(301, 73%, 81%);
+}
+
+
+.cd-top  img {
+    width: 20%;
+    height: 30%;
+}
+
+
+.desc p {
+    color: hsl(0, 33%, 2%);
+    font-size: 20px;
+}
+
+
+.cd-top  {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: hsl(30, 93%, 48%);
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* ボタンをセンターに配置 */
+    gap: 200px; /* ボタン間の間隔を設定 */
+    padding-right: 160px;
+}
+.memmber_enter  {
+    width: 300%;
+    padding: 15px;
+    background: #f19db5;
+    border: 1px solid hwb(345 47% 4%);
+}
+.memmber  {
+    width: 300%;
+    padding: 15px;
+    background: #3E3A39;
+    border: 1px solid hwb(0 5% 95%);
+    color: #fff;
+}
+
+
+/* 投稿ボタン */
+
+
+.btn { 
+position: fixed;
+width: 15%;
+height: 15%;
+bottom: 10px;
+right: 10px;
+padding: 6px 40px;
+color: hwb(300 95% 4%);
+background-color: #f19db5;
+border: 1px solid rgb(244, 239, 239);
+font-size: 20px;
+}
+
+
+footer {
+    height: 80px;
+    background-color: #4c586f;
+    position: absolute;
+    width: 97%;
+    text-align: center;
+    color: #171212;
+    font-size: .8em;
+    padding: 5px;
+    
+}
+
+footer p {
+    /* line-height: 80px; */
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer input {
+    text-align: center;
+}
+.headername {
+    display: none;
+    text-align: center;
+    margin: 0%;
+}
+.btn-l {
+    display: none;
+}
+.haus {
+    font-size: 30px;
+    color: hsl(0, 10%, 4%);
+    padding: 1rem 2rem;
+    border-bottom: 6px double #000;
+    background: #f4f4f4;
+}
+.infsion {
+    background-color: hwb(0 95% 4%);
+    width: 90%;
+    margin-left: 55px;
+    
+}
+.cm {
+    background-color: hwb(0 95% 4%);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.cm p {
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 0 5px;
+    width: 60%;
+    height: 70%;
+    line-height: 90px;
+    text-align: center;
+    color: hsl(0, 9%, 4%);
+    font-size: 20px;
+    font-weight: bold;
+    background: #ffcc75;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.cm p:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #ffcc75;
+    z-index: 0;
+}
+.cm img {
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+}
+.cm2 {
+    background-color: hwb(0 95% 4%);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.cm2 p {
+    margin-right: 10%;   
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 0 5px;
+    width: 60%;
+    height: 60%;
+    line-height: 90px;
+    text-align: center;
+    color: hsl(0, 9%, 4%);
+    font-size: 20px;
+    font-weight: bold;
+    background: #ff8e9d;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+.cm2 p:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #ff8e9d;
+    z-index: 0;
+}
+
+.cm2 img {
+    width: 400px;
+    height: auto;
+}
+.Fot {
+    width: 20%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.border {
+    border-bottom: 7px dotted hsl(301, 87%, 79%);
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+    .headername {
+        font-size: 25px;
+        display: block;
+    }
+    .headerlog {
+        display: none;
+    }
+    .pc-nav {
+        display: none;
+    }
+    .elem-visual {
+        margin: 10px;
+    }
+    .description img {
+        width: 100%;
+    }
+    .slide-items {
+        padding: 0;
+    }
+    .slide-items img {
+        width: 100%;
+        height: 100%;
+    }
+    .time_date {
+        font-size: 20px;
+    }
+    .cd-top img {
+        width: 30%;
+    }
+    .cp_timeline04 {
+        margin: 0;
+    }
+	.cp_timeline04:before {
+		left: 15px;
+	}
+	.cp_timeline04 .timeline_item  .time:before {
+		left: -32px;
+	}
+	.cp_timeline04 .timeline_item {
+		margin: 0px 0px 0px 40px;
+	}
+	.cp_timeline04 .timeline_item .desc {
+		padding-left: 0px;
+		border-top: 1px solid #880e4f;
+		border-left: none;
+	}
+    desc p {
+        font-size: 15px;
+    }
+    .btn {
+        display: none;
+        width: 15%;
+        height: 15%;
+        padding: 10px 0;
+    }
+    .btn-l {
+        display: block;
+        width: 60%;
+        left: 26%;
+        position: relative;
+        padding: 5px;
+        background: #f19db5;
+        border: 1px solid hwb(345 47% 4%);
+        font-size: 20px;
+    }
+    .infsion {
+        margin-left: 9%;
+    }
+    .cm {
+        display: block;
+        margin-left: 0;
+    }
+    .cm p{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .cm img {
+        width: 300px;
+        height: auto;
+        margin-left: 5%;
+    }
+    .cm2 {
+        display: block;
+        margin-left: 0;
+    }
+    .cm2 p{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .cm2 img {
+        width: 300px;
+        height: auto;
+        margin-left: 5%;
+    }
+    .memmber_enter {
+        width: 160%;
+    }
+    .memmber {
+        width: 160%;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center; /* ボタンをセンターに配置 */
+        gap: 70px; /* ボタン間の間隔を設定 */
+        padding-right: 0px;
+    }    
+    .Fot {
+        width: 40%;
+        height: auto;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .headername {
+        font-size: 25px;
+        display: block;
+    }
+    .headerlog {
+        display: none;
+    }
+    .pc-nav {
+        display: none;
+    }
+    .elem-visual {
+        margin: 10px;
+    }
+    .description img {
+        width: 100%;
+    }
+    .slide-items {
+        padding: 0;
+    }
+    .slide-items img {
+        width: 100%;
+        height: 100%;
+    }
+    .time_date {
+        font-size: 20px;
+    }
+    .cd-top img {
+        width: 30%;
+    }
+    .cp_timeline04 {
+        margin: 0;
+    }
+	.cp_timeline04:before {
+		left: 15px;
+	}
+	.cp_timeline04 .timeline_item  .time:before {
+		left: -32px;
+	}
+	.cp_timeline04 .timeline_item {
+		margin: 0px 0px 0px 40px;
+	}
+	.cp_timeline04 .timeline_item .desc {
+		padding-left: 0px;
+		border-top: 1px solid #880e4f;
+		border-left: none;
+	}
+    desc p {
+        font-size: 15px;
+    }
+    .btn {
+        display: none;
+        width: 15%;
+        height: 15%;
+        padding: 10px 0;
+    }
+    .btn-l {
+        display: block;
+        width: 60%;
+        left: 26%;
+        position: relative;
+        padding: 5px;
+        background: #f19db5;
+        border: 1px solid hwb(345 47% 4%);
+        font-size: 20px;
+    }
+    .infsion {
+        margin-left: 9%;
+    }
+    .cm {
+        display: block;
+        margin-left: 0;
+    }
+    .cm p{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .cm img {
+        width: 300px;
+        height: auto;
+        margin-left: 5%;
+    }
+    .cm2 {
+        display: block;
+        margin-left: 0;
+    }
+    .cm2 p{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .cm2 img {
+        width: 300px;
+        height: auto;
+        margin-left: 60%;
+    }
+    .memmber_enter {
+        width: 200%;
+    }
+    .memmber {
+        width: 200%;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center; /* ボタンをセンターに配置 */
+        gap: 200px; /* ボタン間の間隔を設定 */
+        padding-right: 160px;
+    }  
+    .Fot {
+        padding-left: 50px;
+    }
+  
+}

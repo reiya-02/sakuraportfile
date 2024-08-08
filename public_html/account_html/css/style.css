@@ -1,0 +1,101 @@
+
+body {
+    background-image: url('../../tweet/img/back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#uploadedImage {
+    width: 450px;
+    height: auto;
+}
+table {
+    border-collapse: collapse;  /* セルの線を重ねる */
+}
+
+
+th,td {
+    padding: 5px 10px;          /* 余白指定 */
+}
+
+th {
+    background-color: #2196F3;  /* 背景色指定 */
+    color:  #fff;               /* 文字色指定 */
+    font-weight:  normal;       /* 文字の太さ指定 */
+    position:  relative;        /* 位置指定 */
+    z-index: 10;                /* 重なり調整 */
+    width: 60%;
+    height: 30%;
+}
+
+td {
+    background-color:  #c0c9ff; /* 背景色指定 */
+    padding-left: 40px;         /* 余白指定 */
+    width: 150%;
+    height: 10%;
+    
+}
+
+th::after {
+    content:'';                 /* 空の要素を作る */
+    position:  absolute;        /* 位置指定 */
+    height: 24px;               /* 高さ指定 */
+    width: 24px;                /* 幅指定 */
+    background-color: #2196F3;  /* 背景色指定 */
+    transform:  rotate(45deg);  /* 要素を回転 */
+    top: 5px;                   /* 位置指定 */
+    right: -12px;               /* 位置指定 */
+    z-index:  -1;               /* 重なり調整 */
+}
+
+tr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+    padding: 10px;
+}
+
+.btn-red {
+    background-color: hsl(354, 86%, 54%);
+}
+
+footer {
+    height: 80px;
+    background-color: #4c586f;
+    position: absolute;
+    width: 97%;
+    text-align: center;
+    color: #171212;
+    font-size: .8em;
+    padding: 5px;
+    
+}
+footer p {
+    /* line-height: 80px; */
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer input {
+    text-align: center;
+}
+.my {
+    text-align: center;
+    display: block;
+}
+.ml {
+    background-color: hsl(354, 86%, 54%);
+    display: block;
+}
+@media screen and (max-width: 767px) {
+    footer {
+        width: 100%;
+    }
+    #uploadedImage {
+        width: 350px;
+        height: auto;
+    }
+    
+}
